@@ -1,0 +1,863 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+/* Container centralizado */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+  /* cinza claro */
+}
+
+/* Box de login */
+.login-box {
+  background-color: #ffffff;
+  /* fundo branco */
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Título */
+.login-box h1 {
+  font-size: 2rem;
+  color: #4f46e5;
+  /* roxo */
+  margin-bottom: 2rem;
+}
+
+/* Labels */
+.login-box label {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d1d5db;
+  /* borda cinza clara */
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+/* Botão */
+.login-box button {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-box button:hover {
+  background-color: #6366f1;
+  /* roxo mais claro */
+}
+
+/* Mensagem de erro */
+.login-box p {
+  color: #ef4444;
+  /* vermelho */
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* styles/dashboard.css */
+
+/* Container principal */
+.dashboard-container {
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+/* Título */
+.dashboard-container h1 {
+  font-size: 2rem;
+  color: #4f46e5;
+  /* roxo primário */
+  margin-bottom: 2rem;
+}
+
+/* Grid de cards */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.dashboard-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: #ffffff;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* styles/clientes.css */
+
+/* Container principal */
+.clientes-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Título */
+.clientes-container h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  /* roxo primário */
+  margin-bottom: 1.5rem;
+}
+
+/* Botão de criar */
+.clientes-container>button {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.clientes-container>button:hover {
+  background-color: #6366f1;
+}
+
+/* Formulário */
+.form-cliente {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-cliente input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.form-cliente button {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.form-cliente button:hover {
+  background-color: #6366f1;
+}
+
+/* Tabela de clientes */
+.clientes-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.clientes-table th,
+.clientes-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+  text-align: left;
+}
+
+.clientes-table th {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.clientes-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* styles/livros.css */
+
+/* Container principal */
+.livros-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Título */
+.livros-container h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* Botão de criar */
+.btn-criar {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.btn-criar:hover {
+  background-color: #6366f1;
+}
+
+/* Formulário */
+.form-livro {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-livro input,
+.form-livro select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+/* Botão salvar */
+.btn-salvar {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-salvar:hover {
+  background-color: #6366f1;
+}
+
+/* Tabela de livros */
+.livros-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.livros-table th,
+.livros-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+  text-align: left;
+}
+
+.livros-table th {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.livros-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Botão ver exemplares */
+.btn-exemplares {
+  background-color: #10b981;
+  /* verde */
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-exemplares:hover {
+  background-color: #059669;
+}
+
+/* styles/exemplares.css */
+
+/* Container principal */
+.exemplares-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Título */
+.exemplares-container h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* Botão criar exemplar / empréstimo */
+.exemplares-container>button {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.exemplares-container>button:hover {
+  background-color: #6366f1;
+}
+
+/* Formulários */
+.form-exemplar,
+.form-emprestimo {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-exemplar input,
+.form-exemplar select,
+.form-emprestimo select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+/* Botões dentro de formulários */
+.form-exemplar button,
+.form-emprestimo button {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-exemplar button:hover,
+.form-emprestimo button:hover {
+  background-color: #6366f1;
+}
+
+/* Tabela de exemplares */
+.exemplares-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.exemplares-table th,
+.exemplares-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+  text-align: left;
+}
+
+.exemplares-table th {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.exemplares-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Botão fazer empréstimo */
+.exemplares-table button {
+  background-color: #10b981;
+  /* verde */
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.exemplares-table button:hover {
+  background-color: #059669;
+}
+
+/* styles/autores.css */
+
+/* Container principal */
+.autores-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Título */
+.autores-container h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* Botão criar */
+.btn-criar {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.btn-criar:hover {
+  background-color: #6366f1;
+}
+
+/* Formulário */
+.form-autor {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-autor input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+/* Botão salvar */
+.btn-salvar {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-salvar:hover {
+  background-color: #6366f1;
+}
+
+/* Tabela de autores */
+.autores-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.autores-table th,
+.autores-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+  text-align: left;
+}
+
+.autores-table th {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.autores-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* styles/categorias.css */
+
+/* Container principal */
+.categorias-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Título */
+.categorias-container h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* Botão criar */
+.btn-criar {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.btn-criar:hover {
+  background-color: #6366f1;
+}
+
+/* Formulário */
+.form-categoria {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-categoria input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+/* Botão salvar */
+.btn-salvar {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-salvar:hover {
+  background-color: #6366f1;
+}
+
+/* Tabela de categorias */
+.categorias-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.categorias-table th,
+.categorias-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+  text-align: left;
+}
+
+.categorias-table th {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.categorias-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* styles/editoras.css */
+
+/* Container principal */
+.editoras-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Título */
+.editoras-container h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* Botão criar */
+.btn-criar {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.btn-criar:hover {
+  background-color: #6366f1;
+}
+
+/* Formulário */
+.form-editora {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-editora input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+/* Botão salvar */
+.btn-salvar {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-salvar:hover {
+  background-color: #6366f1;
+}
+
+/* Tabela de editoras */
+.editoras-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.editoras-table th,
+.editoras-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+  text-align: left;
+}
+
+.editoras-table th {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.editoras-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* styles/emprestimos.css */
+
+/* Container principal */
+.emprestimos-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Título */
+.emprestimos-container h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* Botões */
+.btn-criar,
+.btn-salvar,
+.btn-finalizar {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.btn-criar:hover,
+.btn-salvar:hover,
+.btn-finalizar:hover {
+  background-color: #6366f1;
+}
+
+/* Formulário */
+.form-emprestimo {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-emprestimo select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+/* Tabela */
+.emprestimos-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.emprestimos-table th,
+.emprestimos-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+  text-align: left;
+}
+
+.emprestimos-table th {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.emprestimos-table tr:hover {
+  background-color: #f9fafb;
+}
+
+.finalizado {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* styles/perfil.css */
+
+/* Container principal */
+.perfil-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Título */
+.perfil-container h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* Card do perfil */
+.perfil-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Subtítulo */
+.perfil-card h3 {
+  font-size: 1.2rem;
+  color: #4f46e5;
+  margin-top: 1rem;
+}
+
+/* Texto dentro do card */
+.perfil-card p {
+  font-size: 1rem;
+  color: #374151;
+}
