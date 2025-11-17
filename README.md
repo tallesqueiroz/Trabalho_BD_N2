@@ -162,16 +162,16 @@ Trabalho_BD_N2/
 └── README.md
 ```
 
-## 🛠️ Recursos Principais
+## Recursos Principais
 
-- ✅ Gerenciamento de acervo (livros, autores, categorias, editoras)
-- ✅ Controle de exemplares com código de barras
-- ✅ Sistema de empréstimos com cálculo automático de multas
-- ✅ Sistema de reservas com notificações
-- ✅ Autenticação JWT com diferentes níveis de acesso
-- ✅ Auditoria com logs de ações
-- ✅ Triggers e procedures para integridade de dados
-- ✅ Geração automática de IDs customizados (formato LIV-AAAA-NNNN)
+- Gerenciamento de acervo (livros, autores, categorias, editoras)
+- Controle de exemplares com código de barras
+- Sistema de empréstimos com cálculo automático de multas
+- Sistema de reservas com notificações
+- Autenticação JWT com diferentes níveis de acesso
+- Auditoria com logs de ações
+- Triggers e procedures para integridade de dados
+- Geração automática de IDs customizados (formato LIV-AAAA-NNNN)
 
 ```
 
